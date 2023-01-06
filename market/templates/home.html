@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center" id="lol2">
+        <img id="img1"src="https://m.foolcdn.com/media/dubs/original_images/Intro_slide_-_digital_stock_chart_going_up_-_source_getty.jpg"></img>
+        <div class="col-md-5 p-lg-5 mx-auto my-5" >
+            <div id="text1">
+                <h1 class="display-4 font-weight-normal">WebsiteSpiders Market</h1>
+                <p class="lead font-weight-normal">This website is about an economic game. You start with $1000, and you buy and sell to increase your budget.</p>
+                <a class="btn btn-primary" href="{{ url_for('market_page') }}">Get Started!</a>
+            </div>
+        </div>
+        <div class="product-device box-shadow d-none d-md-block"></div>
+        <div class="product-device product-device-2 box-shadow d-none d-md-block" ></div>
+    </div>
+    <div class="position-relative">
+        <div class="position-left">
+            <div class="bg">
+                
+                <img class="bg-img" src="https://chiefexecutive.net/wp-content/uploads/2019/06/AdobeStock_108429951-1024x595.jpeg">
+                <h5 class="txt">In the seller section we teach you how to sell your products what will the customer be interested to buy and how to set your profit margin to gain as much money as possible with a resonable prices for customers and more.</h5>
+
+            </div>
+        </div>
+        <div class="position-right">
+            <div class="bg">
+                <img class="bg-img" style="height: 580px; max-width: 635px;" src="https://www.plm.automation.siemens.com/media/global/en/buyonline-opengraph-1200x630_tcm27-29248.jpg">
+                <h5 class="txt" style="position:relative;">In the buyer section we teach you when to buy a product for the lowest price possible and  how to negotiate with the seller to get your hands on the best deal and give you tips on how to benifit from buying at low selling high later on.</h5>
+                <a href="{{ url_for('market_page') }}">
+                <button class="btn" style="background-color: seagreen; position: relative; width:100%; top: 350px; right: 320px; font-size: 120%;">Buy&Sell</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <style>
+        #lol2{
+        }
+        #img1{
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        #text1{
+            color: whitesmoke;
+        }
+        .position-left{
+            top: 0%;
+            left: 0%;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+        }
+        .position-right{
+            top: 0%;
+            right: 0%;
+            position: absolute;
+            width: 50%;
+            height: 50%;
+        }
+        .bg{
+            top: 0%;   
+            left: 0%;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .bg-img{
+            position: absolute;
+            left: 0%;
+            width: 1000px;
+        }
+        .txt{
+            background-color: white;
+            opacity: 0.6;
+            margin: 3px;
+            border-radius: 4px;
+            position:relative; 
+            color:black;
+            top:320px
+        }
+    </style>
+{% endblock %}
